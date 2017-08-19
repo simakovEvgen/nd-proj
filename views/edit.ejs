@@ -1,0 +1,31 @@
+<%- include('layout/header') -%>
+<div class="container green-row">
+    <div class="max-1200">
+        <div class="place">
+            <h1 class="whereami">EDIT PROJECT INFO</h1>
+        </div>
+    </div>
+</div>
+<div class="container max-1200">
+    <%- include('layout/portfolio-nav') -%>
+    <form id="editForm" class="edit-progect-info ">
+        <div class="edit-image-info">
+            <div class="edit-image-box"><img src="<%= src %>" alt="project"></div>
+            <div class="edit-info-box">
+                <input id="title" type="text" placeholder="Project title" name="title" class="edit-title" value="<%= title %>" required/>
+                <input id="author" type="text" placeholder="Project author" name="author" class="edit-author" value="<%= author %>" required/>
+                <select id="category" type="text" placeholder="Category" name="category" class="edit-category" value="<%= category %>" required>
+                    <option value="web">Web</option>
+                    <option value="print">Print</option>
+                    <option value="applications">Application</option>
+                    <option value="photography">Photography</option>
+                </select>
+            </div>
+        </div>
+        <div class="edit-description-button">
+            <input id="desc" type="text" class="edit-description" placeholder="Description" value="<%= description %>" required/>
+            <button type="submit"  id="editDone" class="edit-btn">DONE</button>
+        </div>
+    </form>
+</div>
+<%- include('layout/footer') -%>

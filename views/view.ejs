@@ -1,0 +1,23 @@
+<%- include('layout/header') -%>
+<div class="container green-row">
+    <div class="max-1200">
+        <div class="place">
+            <h1 class="whereami">CHECK OUT OUR WORK</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <%- include('layout/portfolio-nav') -%>
+    <div class="progect-info max-1200">
+        <div class="image-info">
+            <div class="image-box"><img src="<%= src %>" alt="project"></div>
+            <div class="info-box">
+                <h2 class="title"><%= title.toUpperCase() %></h2>
+                <p class="author"><span class="icon"></span><%= author %></p>
+                <p class="date"><span class="icon"></span><%= date %></p>
+            </div>
+        </div>
+        <p id="outDesc" class="description"><%= description %></p>
+    </div>
+</div>
+<%- include('layout/footer') -%>

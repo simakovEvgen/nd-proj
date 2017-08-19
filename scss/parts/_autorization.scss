@@ -1,0 +1,26 @@
+.container.autorize {
+    .login-box {
+        #login, #password, #login-btn{
+          color: #322f2f;
+          margin: 16px 10px 22px 0;
+          padding: 4px 6px;
+          border: none;
+          border-bottom: 1px solid #8a8888;
+        }
+        a, a:link, a:visited, a:active {
+          color: #8a8888;
+          text-decoration: none;
+          font-family: Novecento;
+        }
+        #login-btn {
+          border: 1px solid #2ecc71;
+          color: #2ecc71;
+          background-color: #ffffff;
+          font-size: 13px;
+          padding: 10px 16px;
+          margin-bottom: 10px;
+          height: 60px;
+          font-family: Novecento;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "deploy": "gcloud app deloy"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-mysql-session": "^1.2.2",
+    "express-session": "^1.15.5",
+    "gm": "^1.23.0",
+    "google-cloud": "^0.56.0",
+    "morgan": "~1.8.1",
+    "multer": "^1.3.0",
+    "mysql": "^2.14.1",
+    "nodemailer": "^4.0.1",
+    "nodemailer-express-handlebars": "^2.0.0",
+    "serve-favicon": "~2.4.2",
+    "sharp": "^0.18.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}

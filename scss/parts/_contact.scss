@@ -1,0 +1,57 @@
+.map {
+  iframe {
+    height: 500px;
+    width: 100%;
+  }
+}
+.container {
+  .contact-header {
+    padding-top: 87px;
+    padding-bottom: 24px;
+    font-family: Novecento;
+    font-size: 17px;
+    font-weight: 500;
+    color: #a5a5a5;
+    margin: auto;
+    text-align: center;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 556px;
+    padding-bottom: 30px;
+    margin: auto;
+    .name, .email, .message, .subject {
+      border: 2px solid #8a8888;
+      padding: 11px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      color: #a5a5a5;
+    }
+    /*.name {
+    }
+    .email {
+    }
+    .subject {
+    }*/
+    .message {
+      resize: none;
+      height: 219px;
+      color: #a5a5a5;
+    }
+    .form-btn {
+      width: 138px;
+      height: 39px;
+      border: none;
+      background-color: #2ecc71;
+      color: #ffffff;
+      font-family: Novecento;
+      font-size: 13px;
+      margin-bottom: 60px;
+    }
+    ::-webkit-input-placeholder {color: #a5a5a5;}
+    ::-moz-placeholder          {color: #a5a5a5;}/* Firefox 19+ */
+    :-moz-placeholder           {color: #a5a5a5;}/* Firefox 18- */
+    :-ms-input-placeholder      {color: #a5a5a5;}
+  }
+}

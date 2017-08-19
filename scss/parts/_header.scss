@@ -1,0 +1,178 @@
+.header {
+  /*padding-bottom: 15px;*/
+  .logo-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    .logo-box, .socials-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .logo-box{
+      .logo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 50px;
+        width: 162px;
+        background-image: url(../../uploads/sprite.png);
+      }
+    }
+    .socials-box {
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 80%;
+      max-width: 320px;
+      .social-link {
+        list-style: none;
+        a, a:link, a:visited, a:active {
+          color: #dadada;
+        }
+        a, a:hover, a:link, a:visited, a:active {
+          text-decoration: none;
+          font-size: 11px;
+          cursor: default;
+          div {
+            border: 4px solid #dadada;
+            border-radius: 45px;
+            padding-top: 12px;
+            padding-left: 12px;
+            width: 23px;
+            height: 23px;
+            /*margin-left: 10px;*/
+            cursor: pointer;
+          }
+          div:hover {
+            border: 4px solid #00bbf5;
+            color: #00bbf5;
+            transition: 600ms;
+          }
+        }
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    .nav-link {
+      list-style: none;
+      padding: 31px 0 32px 0;
+      a, a:link, a:visited, a:active  {
+        text-decoration: none;
+        color: #737373;
+        font-size: 14px;
+        font-family: "Novecento";
+        padding: 31px 30px 31px 0;
+      }
+      a:hover {
+        color: #2ecc71;
+        transition: 300ms;
+      }
+    }
+  }
+}
+
+/*--------------------------- max-width: 520px --------------------------------*/
+
+@media (max-width: 520px) {
+  .header {
+    .logo-socials {
+      /*display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1;
+      justify-content: space-between;
+      border-bottom: 1px solid gainsboro;*/
+      .logo-box, .socials-box {
+        /*display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;*/
+        width: 100%;
+      }
+      .logo-box{
+        .logo {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          height: 50px;
+          width: 162px;
+          background-image: url(../../images/sprite.png);
+        }
+      }
+      .socials-box {
+        /*justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;*/
+        width: 100%;
+        max-width: none;
+        padding-bottom: 19px;
+        .social-link {
+          /*list-style: none;*/
+          a, a:link, a:visited, a:active {
+            /*color: #dadada;*/
+          }
+          a, a:hover, a:link, a:visited, a:active {
+            /*text-decoration: none;
+            font-size: 11px;
+            cursor: default;*/
+            div {
+              /*border: 4px solid #dadada;
+              border-radius: 45px;
+              padding-top: 12px;
+              padding-left: 12px;
+              width: 23px;
+              height: 23px;
+              !*margin-left: 10px;*!
+              cursor: pointer;*/
+            }
+            div:hover {
+              /*border: 4px solid #00bbf5;
+              color: #00bbf5;
+              transition: 600ms;*/
+            }
+          }
+        }
+      }
+
+    }
+    .nav {
+      /*display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;*/
+      .nav-link {
+        /*list-style: none;
+        padding: 31px 0 29px 0;*/
+        a, a:link, a:visited, a:active  {
+          /*text-decoration: none;
+          color: #737373;
+          font-size: 14px;
+          font-family: "Novecento";
+          padding: 31px 30px 29px 0;*/
+        }
+        a:hover {
+          /*color: #2ecc71;
+          transition: 300ms;*/
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------- ICON FONTS -------------------------------*/
+
+.pint:before { content: '\e800'; font-family: "fontello" }
+.ggl:before { content: '\e801'; font-family: "fontello" }
+.twitter:before { content: '\e802'; font-family: "fontello" }
+.fb:before { content: '\20\e803'; font-family: "fontello"; padding-left: 2px }
+.dribble:before { content: '\e804'; font-family: "fontello" }
+.rss:before { content: '\e805'; font-family: "fontello" }

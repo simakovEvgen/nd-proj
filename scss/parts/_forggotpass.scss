@@ -1,0 +1,24 @@
+.container.reset {
+  .login-box {
+    p {
+      color: #322f2f;
+      font-family: Novecento;
+    }
+    #login-for-reset{
+      color: #322f2f;
+      margin: 16px 10px 22px 0;
+      padding: 4px 6px;
+      border: none;
+      border-bottom: 1px solid #8a8888;
+    }
+    #reset-pass {
+      border: 1px solid #2ecc71;
+      color: #2ecc71;
+      background-color: #ffffff;
+      font-size: 13px;
+      padding: 10px 16px;
+      margin-bottom: 22px;
+      font-family: Novecento;
+    }
+  }
+}

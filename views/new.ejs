@@ -1,0 +1,37 @@
+<%- include('layout/header') -%>
+<div class="container green-row">
+    <div class="max-1200">
+        <div class="place">
+            <h1 class="whereami">ADD NEW PROJECT</h1>
+        </div>
+    </div>
+</div>
+<div class="container max-1200">
+    <%- include('layout/portfolio-nav') -%>
+    <form action="/upload" method="POST" enctype="multipart/form-data" class="new-project-info">
+        <div class="new-image-info">
+            <div class="new-image-box green">
+                <label for="file">
+                    <input id="file" name="sample_file" type="file">
+                    <span id="file-info">File</span>
+                    <img src="uploads/001.jpg" alt="i">
+                </label>
+            </div>
+            <div class="new-info-box">
+                <input type="text" id="newTitle" placeholder="Project title" name="title" class="new-title" required />
+                <input type="text" id="newAuthor" placeholder="Project author" name="author" class="new-author" required />
+                <select type="text" id="category" name="category" class="new-category">
+                    <option value="web">Web</option>
+                    <option value="print">Print</option>
+                    <option value="applications">Application</option>
+                    <option value="photography">Photography</option>
+                </select>
+            </div>
+        </div>
+        <div class="new-description-button">
+            <input type="text" id="descForNew" class="new-description" name="description" placeholder="Description" required/>
+            <button id="addNew" class="new-btn">DONE</button>
+        </div>
+    </form>
+</div>
+<%- include('layout/footer') -%>

@@ -1,0 +1,179 @@
+.edit-progect-info {
+  width: 100%;
+  .edit-image-info {
+    max-width: 691px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    .edit-image-box {
+      margin: 0;
+      padding: 0;
+      img {
+        max-width: 330px;
+        height: auto;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .edit-info-box {
+      margin-left: 15px;
+      width: 313px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      .edit-category, .edit-author, .edit-title {
+        letter-spacing: 0.5px;
+        font-family: BerlinSansFB;
+        font-weight: 400;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #dadada;
+        color: #a5a5a5;
+        margin: 10px 0;
+        width: 100%;
+        padding-bottom: 8px;
+      }
+      ::-webkit-input-placeholder {color: #a5a5a5;}
+      ::-moz-placeholder          {color: #a5a5a5;}/* Firefox 19+ */
+      :-moz-placeholder           {color: #a5a5a5;}/* Firefox 18- */
+      :-ms-input-placeholder      {color: #a5a5a5;}
+      .edit-category:focus, .edit-author:focus, .edit-title:focus {
+        outline: none;
+      }
+    }
+  }
+  .edit-description-button {
+    max-width: 691px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    ::-webkit-input-placeholder {color: #a5a5a5;}
+    ::-moz-placeholder          {color: #a5a5a5;}/* Firefox 19+ */
+    :-moz-placeholder           {color: #a5a5a5;}/* Firefox 18- */
+    :-ms-input-placeholder      {color: #a5a5a5;}
+    .edit-description:focus {
+      outline: none;
+    }
+    .edit-description {
+      padding-left: 2px;
+      margin: 31px 0 0;
+      font-family: BerlinSansFB;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      font-size: 15px;
+      color: #a5a5a5;
+      border: none;
+      resize: none;
+      border-bottom: 1px solid #dadada;
+      line-height: 27px;
+    }
+    .edit-btn {
+      margin: 33px 0;
+      max-width: 87px;
+      font-family: Novecento;
+      font-weight: 500;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #2ecc71;
+      border: none;
+      padding: 13px 19px;
+    }
+  }
+}
+
+.container>.portfolio-nav {
+  padding-left: 0px;
+}
+
+@media (max-width: 687px) {
+  .edit-progect-info {
+    width: 100%;
+    .edit-image-info {
+      max-width: 691px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      .edit-image-box {
+        margin: 0;
+        padding: 0;
+        img {
+          max-width: 100%;
+          height: auto;
+          border: none;
+          padding: 0;
+          margin: 0 0 30px 0;
+        }
+      }
+      .edit-info-box {
+        margin-left: 0px; /**/
+        width: 100%; /**/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        .edit-category, .edit-author, .edit-title {
+          letter-spacing: 0.5px;
+          font-family: BerlinSansFB;
+          font-weight: 400;
+          font-size: 14px;
+          border: none;
+          border-bottom: 1px solid #dadada;
+          color: #a5a5a5;
+          margin: 13px 0;
+          width: 100%;
+          padding-bottom: 8px;
+        }
+        ::-webkit-input-placeholder {color: #a5a5a5;}
+        ::-moz-placeholder          {color: #a5a5a5;}/* Firefox 19+ */
+        :-moz-placeholder           {color: #a5a5a5;}/* Firefox 18- */
+        :-ms-input-placeholder      {color: #a5a5a5;}
+        .edit-category:focus, .edit-author:focus, .edit-title:focus {
+          outline: none;
+        }
+      }
+    }
+    .edit-description-button {
+      max-width: 691px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      ::-webkit-input-placeholder {color: #a5a5a5;}
+      ::-moz-placeholder          {color: #a5a5a5;}/* Firefox 19+ */
+      :-moz-placeholder           {color: #a5a5a5;}/* Firefox 18- */
+      :-ms-input-placeholder      {color: #a5a5a5;}
+      .edit-description:focus {
+        outline: none;
+      }
+      .edit-description {
+        padding-left: 2px;
+        margin: 13px 0 0;
+        font-family: BerlinSansFB;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        color: #a5a5a5;
+        border: none;
+        resize: none;
+        border-bottom: 1px solid #dadada;
+        line-height: 27px;
+      }
+      .edit-btn {
+        margin: 33px 0;
+        max-width: 87px;
+        font-family: Novecento;
+        font-weight: 500;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #2ecc71;
+        border: none;
+        padding: 13px 19px;
+      }
+    }
+  }
+}
