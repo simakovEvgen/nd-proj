@@ -1,7 +1,7 @@
 var storeConfig = {
 
-    checkExpirationInterval: 600000,
-    expiration: 600000,
+    checkExpirationInterval: 60000,
+    expiration: 60000,
     createDatabaseTable: true,
     schema: {
         tableName: 'sessions',
